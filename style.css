@@ -1,0 +1,105 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  border: 10px solid #000;
+  cursor: pointer;
+  margin: 0 -2px;
+  outline: none;
+  padding: 0;
+
+}
+
+/* .active {
+  border-color: white;
+} */
+
+/* #green .active {
+  background: rgba(35, 200, 82, 1)!important;
+  border-color: white;
+}
+
+#red .active {
+  background: rgba(254, 35, 34, 1)!important;
+}
+
+#yellow .active {
+  background: rgba(254, 35, 34, 1)!important;
+}
+
+#blue .active {
+  background: rgba(254, 35, 34, 1)!important;
+} */
+
+#buttons-container {
+  margin: 0 auto;
+  position: relative;
+  width: 620px;
+}
+
+#buttons-container.blocked button {
+  pointer-events: none;
+}
+
+#green {
+  border-top-left-radius: 100%;
+  background: rgba(35, 200, 82, 0.4);
+}
+
+#red {
+  border-top-right-radius: 100%;
+  background: rgba(254, 35, 34, 0.4); 
+}
+
+#yellow {
+  border-bottom-left-radius: 100%;
+  background: rgba(243, 194, 16, 0.4);
+}
+
+#blue {
+  border-bottom-right-radius: 100%;
+  background: rgba(0, 103, 208, 0.4); 
+}
+
+#counter {
+  background: #000;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Arial;
+  font-size: 100px;
+  line-height: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  top: 50%;
+  width: 200px;
+}
+
+
+
+#red:hover, #red.active {
+  background: rgba(254, 35, 34, 1);
+}
+
+#green:hover, #green.active {
+  background: rgba(35, 200, 82, 1);
+}
+
+#yellow:hover, #yellow.active {
+  background: rgba(243, 194, 16, 1);
+}
+
+#blue:hover, #blue.active {
+  background: rgba(0, 103, 208, 1);
+}
